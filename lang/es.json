@@ -1,0 +1,28 @@
+{
+"HACKING_TERMINAL": {
+    "title": "Haking Terminal",
+    "settings": {
+        "username": {
+            "name": "Usuario",
+            "hint": "El nombre de usuario que el PJ debe adivinar"
+        },
+        "password": {
+            "name": "Contraseña",
+            "hint": "La contraseña que el jugador debe adivinar"
+        },
+        "maxAttemps": {
+            "name": "intentos máximos",
+            "hint": "Números de intentos antes de bloquear el acceso"
+        }
+    },
+    "gmPanel": "Panel GM",
+    "openTerminal": "Abrir Terminal de Hackeo",
+    "resetAttempts": "Reiniciar Intentos",
+    "save": "Garudar",
+    "accessGranted": "ACCESO AUTORIZADO",
+    "accessDenied": "ACCESO DENEGADO",
+    "accessBlocked": "ACCESO BLOQUEADO",
+    "attemptsRemaining": "intentos restantes",
+    "blocked": "BLOQUEADO"
+ }
+}

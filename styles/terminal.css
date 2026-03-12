@@ -1,0 +1,222 @@
+/* ===== Hacking Terminal - Foundry VTT Module Styles ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Window Override */
+.hacking-terminal-window {
+  background: #0a0a0a !important;
+  border: 2px solid #00a82a !important;
+  box-shadow:
+    0 0 30px rgba(0, 255, 65, 0.15),
+    0 0 60px rgba(0, 255, 65, 0.05) !important;
+}
+
+.hacking-terminal-window .window-header {
+  background: linear-gradient(180deg, #1a1a1a, #111) !important;
+  border-bottom: 1px solid #00a82a !important;
+}
+
+.hacking-terminal-window .window-header .window-title {
+  color: #00cc33 !important;
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+  letter-spacing: 3px !important;
+}
+
+.hacking-terminal-window .window-content {
+  background: #0a0a0a !important;
+  padding: 0 !important;
+}
+
+/* Container */
+.hacking-terminal-container {
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  color: #00ff41;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Scanlines */
+.ht-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.35;
+}
+
+/* Body */
+.ht-body {
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+  position: relative;
+  z-index: 5;
+}
+
+/* Output */
+.ht-output {
+  margin-bottom: 2px;
+  white-space: pre;
+}
+
+/* Terminal lines */
+.ht-line {
+  margin-bottom: 2px;
+  line-height: 1.28;
+  font-size: 0.85rem;
+}
+
+/* Cursor parpadeante */
+.ht-line.typing::after {
+  content: "█";
+  display: inline-block;
+  margin-left: 2px;
+  color: #6cff6c;
+  text-shadow: 0 0 4px #6cff6c;
+  animation: ht-blink 0.8s steps(1) infinite;
+}
+
+@keyframes ht-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Text styles */
+.ht-system {
+  color: #00cc33;
+}
+
+.ht-info {
+  color: #00ff41;
+}
+
+.ht-warning {
+  color: #ffb000;
+  text-shadow: 0 0 6px rgba(255, 176, 0, 0.25);
+}
+
+.ht-error {
+  color: #ff0033;
+  text-shadow: 0 0 8px rgba(255, 0, 51, 0.5);
+}
+
+.ht-success {
+  color: #00ff41;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.6);
+  font-size: 1rem;
+}
+
+.ht-blocked {
+  color: #ff0033;
+  text-shadow: 0 0 15px rgba(255, 0, 51, 0.7);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ht-ascii {
+  color: #008f24;
+  font-size: 0.65rem;
+  line-height: 1.08;
+}
+
+/* Input Area */
+.ht-input-area {
+  margin-top: 0;
+  position: sticky;
+  bottom: 0;
+  background: #0a0a0a;
+  padding-top: 6px;
+  z-index: 6;
+}
+
+.ht-input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.ht-prompt {
+  color: #00ff41;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  text-shadow: 0 0 6px rgba(0, 255, 65, 0.3);
+}
+
+.ht-input {
+  flex: 1;
+  background: transparent !important;
+  border: none !important;
+  color: #00ff41 !important;
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+  font-size: 0.85rem !important;
+  outline: none !important;
+  caret-color: #00ff41;
+  text-shadow: 0 0 6px rgba(0, 255, 65, 0.3);
+  padding: 2px 4px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.ht-input:disabled {
+  color: #ff0033 !important;
+  caret-color: #ff0033;
+  text-shadow: 0 0 6px rgba(255, 0, 51, 0.3);
+  cursor: not-allowed;
+}
+
+.ht-input-area.blocked .ht-prompt {
+  color: #ff0033 !important;
+  text-shadow: 0 0 6px rgba(255, 0, 51, 0.3);
+}
+
+.ht-input-area.blocked .ht-input {
+  color: #ff0033 !important;
+  text-shadow: 0 0 6px rgba(255, 0, 51, 0.3);
+}
+
+/* Footer */
+.ht-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background: linear-gradient(180deg, #111, #1a1a1a);
+  border-top: 1px solid #00a82a;
+  font-size: 0.7rem;
+  color: #008f24;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 5;
+}
+
+.ht-footer-right {
+  opacity: 0.6;
+}
+
+/* Scrollbar */
+.ht-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ht-body::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.ht-body::-webkit-scrollbar-thumb {
+  background: #00a82a;
+  border-radius: 3px;
+}
+
+.ht-body::-webkit-scrollbar-thumb:hover {
+  background: #00cc33;
+}

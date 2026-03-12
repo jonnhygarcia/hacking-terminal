@@ -1,0 +1,21 @@
+<div class="hacking-terminal-container">
+  <div class="ht-scanlines"></div>
+  <div class="ht-body">
+    <div id="ht-output" class="ht-output"></div>
+    <div id="ht-input-area" class="ht-input-area">
+      <div class="ht-input-row" id="ht-username-row">
+  <span class="ht-prompt">&gt; USUARIO: </span>
+  <input type="text" id="ht-username" class="ht-input" spellcheck="false" autocomplete="off" />
+</div>
+<div class="ht-input-row" id="ht-password-row" style="display:none;">
+  <span class="ht-prompt">&gt; CONTRASEÑA: </span>
+  <input type="password" id="ht-password" class="ht-input" spellcheck="false" autocomplete="off" />
+</div>
+    </div>
+  </div>
+  <div class="ht-footer">
+    <span id="ht-attempts">INTENTOS: {{attemptsLeft}}/{{maxAttempts}}</span>
+    <span class="ht-footer-right">ENCRYPTED CONNECTION</span>
+  </div>
+</div>
+
