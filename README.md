@@ -11,7 +11,7 @@ Un módulo de **Foundry Virtual Tabletop** diseñado para mejorar la experiencia
 
 ## 📋 Requisitos
 
-- [Foundry Virtual Tabletop](https://foundryvtt.com/) v9.0 o superior
+- [Foundry Virtual Tabletop](https://foundryvtt.com/) v13.351 superior
 - Un navegador web moderno
 
 ## 🚀 Instalación
