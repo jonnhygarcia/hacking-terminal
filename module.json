@@ -28,12 +28,13 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/jonnhygarcia/hacking-terminal_FVTT/main/module.json",
-  "download": "https://github.com/jonnhygarcia/hacking-terminal_FVTT/hacking-terminal.zip",
+  "download": "https://github.com/jonnhygarcia/hacking-terminal_FVTT/archive/refs/tags/v1.0.0.zip",
   "url": "https://github.com/jonnhygarcia/hacking-terminal_FVTT",
   "license": "LICENSE",
   "readme": "README.md",
   "socket": true
 } 
+
 
 
 
