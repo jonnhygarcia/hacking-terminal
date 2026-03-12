@@ -1,0 +1,37 @@
+{
+  "id": "hacking-terminal",
+  "title": "Hacking Terminal",
+  "description": "Simula el hackeo de un ordenador con una pantalla tipo terminal con letras verdes. El GM configura usuario y contraseña, y los jugadores deben adivinarlos en 3 intentos.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13.351"
+  },
+  "authors": [
+    {
+      "name": "Jonnhy Garcia",
+      "url": "https://github.com/jonnhygarcia"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/terminal.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    }
+  ],
+  "manifest": "https://github.com/jonnhygarcia/hacking-terminal_FVTT/releases/latest/download/module.json",
+  "download": "https://github.com/jonnhygarcia/hacking-terminal_FVTT/releases/download/1.0.0/hacking-terminal.zip",
+  "url": "https://github.com/TU_USUARIO/TU_REPO",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "socket": true
+} 
+

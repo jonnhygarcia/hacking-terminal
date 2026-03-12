@@ -67,4 +67,4 @@ Inspirado en la comunidad de Foundry VTT
 
 ---
 
-**Disfruta del módulo y que tus hacks sean épicos! 🔐✨**
+**Disfruta del módulo y que tus hacks sean épicos!
